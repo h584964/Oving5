@@ -114,37 +114,28 @@ public class DobbelKjedetListeS<T extends Comparable<T>> {
 	public T fjern(T x) {
 		T resultat = null;
 		boolean fjernet = false;
-		DobbelNode<T> aktuell = foerste.getNeste();
-		if(antall ==0) {
-			return null;
-		}
+		if(antall > 0) {
 
-		
+		DobbelNode<T> aktuell = foerste.getNeste();
 		
 		//Går igjen til element er funnet
-		while(aktuell.getNeste() != null && !aktuell.getElement().equals(x)) 
+		while(aktuell.getNeste() != null && !fjernet) {
+		
+			T el = aktuell.getElement();
+			if(x.compareTo(el) == 0) {
+				resultat = el;
+				aktuell.getForrige().setNeste(aktuell.getNeste());
+				aktuell.getNeste().setForrige(aktuell.getForrige());
+				antall--;
+				fjernet = true;
+			}
 			aktuell = aktuell.getNeste();
+		}
+		
 			
-		if(aktuell.getNeste() != null)
-		aktuell.getForrige().setNeste(aktuell.getNeste());
-		aktuell.getNeste().setForrige(aktuell.getForrige());
-		antall --;
-		
-//			T el = aktuell.getElement();
-//			if(x.compareTo(el) == 0) {
-//				resultat = el;
-//				aktuell.getForrige().setNeste(aktuell.getNeste());
-//				aktuell.getNeste().setForrige(aktuell.getForrige());
-//				antall--;
-//				fjernet = true;
-//			}
-//			aktuell = aktuell.getNeste();
-//		}
-		
-		return resultat;
 		} // lovlige
-//		
-	
+		return resultat;
+	}
 		
 	
 //		T resultat = null;
