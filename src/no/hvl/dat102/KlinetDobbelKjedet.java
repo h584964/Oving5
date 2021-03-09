@@ -7,10 +7,17 @@ public class KlinetDobbelKjedet {
 	public static void main(String[] args) {
 		int min = 0;
 		int max = 100;
-
-		DobbelKjedetListeS<Integer> liste = new DobbelKjedetListeS<Integer>(100, max);
-
-		// Legger til tall i liste
+		
+//		int [] tab = {1, 2, 5, 8, 10, 65, 99};
+		
+		DobbelKjedetListeS<Integer> liste = new DobbelKjedetListeS<Integer>(min, max);
+		
+//		for(int i = 0; i < tab.length; i++) {
+//			liste.leggTil(tab[i]);
+//		}
+//		
+		
+//		 Legger til tall i liste
 		liste.leggTil(1);
 		liste.leggTil(2);
 		liste.leggTil(5);
@@ -18,6 +25,10 @@ public class KlinetDobbelKjedet {
 		liste.leggTil(10);
 		liste.leggTil(65);
 		liste.leggTil(99);
+	
+		
+		
+		
 
 		// Skriver ut liste
 		System.out.println("Opprinnelig liste");
@@ -38,9 +49,12 @@ public class KlinetDobbelKjedet {
 		System.out.println();
 		// Fjerner noen fra listen og skriver ut listen igjen
 		Integer el1 = Integer.valueOf(10);
+		Integer el2 = Integer.valueOf(99);
 
-		System.out.println("Fjerner " + el1);
+		System.out.println("Fjerner " + el1 + " og " + el2);
 		liste.fjern(el1);
+		liste.fjern(el2);
+		System.out.println("Oppdatert liste: ");
 		liste.visListe();
 
 //		
