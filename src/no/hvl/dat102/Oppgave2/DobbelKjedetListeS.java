@@ -1,4 +1,4 @@
-package no.hvl.dat102.dobbeltkjedetliste;
+package no.hvl.dat102.Oppgave2;
 
 public class DobbelKjedetListeS<T extends Comparable<T>> {
 	private DobbelNode<T> foerste;

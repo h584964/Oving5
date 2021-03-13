@@ -1,6 +1,5 @@
-package no.hvl.dat102;
+package no.hvl.dat102.Oppgave2;
 
-import no.hvl.dat102.dobbeltkjedetliste.DobbelKjedetListeS;
 
 public class KlinetDobbelKjedet {
 

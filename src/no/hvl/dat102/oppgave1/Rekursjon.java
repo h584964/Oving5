@@ -10,7 +10,7 @@ public class Rekursjon {
 
 		System.out.println("De 10 første tallene i tallfølgen:");
 		for (int i = 0; i < 10; i++) {
-			System.out.println("Ledd " +i);
+			System.out.println("Ledd " + i + " ");
 			System.out.println(a(i));
 		}
 

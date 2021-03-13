@@ -2,11 +2,11 @@ package no.hvl.dat102.Oppgave4;
 
 public class NyKvikkSortering {
 	
-	private static final int MIN = 10;
+	private static final int MIN = 1;
 
 	public static <T extends Comparable<T>> void kvikkSortNy(T[] data) {
 		
-		kvikkSortNy(data,0, data.length -1);
+		NyKvikkSortering.kvikkSortNy(data,0, data.length -1);
 		SorteringVedInnsetting.sorteringVedInnsetting(data);
 		}
 	

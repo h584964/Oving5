@@ -18,7 +18,7 @@ public class Hanoi {
 		towers.solve();
 		long slutt = System.nanoTime();
 		System.out.println("Det tok " + (slutt - start) / 1000 + " millisekund");
-		System.out.println("Antall flyttninger " + towers.getAntall());
+		System.out.println("Antall flyttninger:  " + towers.getAntall());
 
 		System.out.println();
 
@@ -29,7 +29,7 @@ public class Hanoi {
 		towers1.solve();
 		long slutt1 = System.nanoTime();
 		System.out.println("Det tok " + (slutt1 - start1) / 1000 + " millisekund");
-		System.out.println("Antall flyttninger " + towers1.getAntall());
+		System.out.println("Antall flyttninger:  " + towers1.getAntall());
 
 		System.out.println();
 
@@ -40,7 +40,7 @@ public class Hanoi {
 		towers2.solve();
 		long slutt2 = System.nanoTime();
 		System.out.println("Det tok " + (slutt2 - start2) / 1000 + " millisekund");
-		System.out.println("Antall flyttninger " + towers2.getAntall());
+		System.out.println("Antall flyttninger:  " + towers2.getAntall());
 
 		System.out.println();
 
@@ -51,7 +51,7 @@ public class Hanoi {
 		towers3.solve();
 		long slutt3 = System.nanoTime();
 		System.out.println("Det tok " + (slutt3 - start3) / 1000 + " millisekund");
-		System.out.println("Antall flyttninger " + towers3.getAntall());
+		System.out.println("Antall flyttninger:  " + towers3.getAntall());
 	}
 
 	/**
